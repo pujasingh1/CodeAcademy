@@ -40,4 +40,4 @@ if choose == "left":
   else:
     print("You get attacked by an angry trout. Game Over")
 else:
-  print("You fell into Hole. Game Over")
+  print("You fell into River. Game Over")
