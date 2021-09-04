@@ -5,7 +5,6 @@ should_continue = True
 def highest_bidder(bidding_record):
   highest_bid = 0
   winner = ""
-  # bidding_record = {"Puja": 123, "Rion": 321}
   for bidder in bidding_record:
     bid_amount = bidding_record[bidder]
     if bid_amount > highest_bid:
