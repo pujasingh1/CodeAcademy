@@ -1,3 +1,4 @@
+#calculator
 def add(n1, n2):
   return n1 + n2
 
@@ -10,28 +11,33 @@ def multiply(n1, n2):
 def divide(n1, n2):
   return n1 / n2
 
-operations = {
+operation = {
   "+": add,
   "-": subtract,
   "*": multiply,
-  "/": divide
+  "/": divide,
 }
 
-number1 = int(input("What's the first number?: "))
-for symbols in operations:
-  print(symbols)
+def calculator():
+  print(logo)
+  num1 = float(input("What's the first number?: "))
+  for symbol in operation:
+    print(symbol)
 
-should_continue = True
-while should_continue:
-  pick_symbols = (input("Pick an operation: "))
-  number2 = int(input("What's the next number?: "))
-  calculation_function = operations[pick_symbols]
-  answer = calculation_function(number1, number2)
+  should_continue = True
+  while should_continue:
+    pick_operation = input("Pick the operation: ")
+    num2 = float(input("what's the next number?: "))
+    calculation_function = operation[pick_operation]
+    answer = calculation_function(num1, num2)
 
-  print(f"{number1} {pick_symbols} {number2} = {answer}")
+    print(f"{num1} {pick_operation} {num2} = {answer}")
 
-  if input(f"Type 'y' to continue calculating with {answer}, or type 'n' to exit.: ") == "y":
-    number1 = answer
-  else:
-    should_continue = False
-    print("Hit run again to continue calculation.")
+    if input(f"Type 'y' to continue with {answer}, or type 'n' to start a new calcualtion: ") == "y":
+      num1 = answer
+    else:
+      should_continue = False
+      calculator()
+
+
+calculator()
