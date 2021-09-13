@@ -1,13 +1,10 @@
 #calculator
 def add(n1, n2):
   return n1 + n2
-
 def subtract(n1, n2):
   return n1 - n2
-
 def multiply(n1, n2):
   return n1 * n2
-
 def divide(n1, n2):
   return n1 / n2
 
@@ -19,7 +16,6 @@ operation = {
 }
 
 def calculator():
-  print(logo)
   num1 = float(input("What's the first number?: "))
   for symbol in operation:
     print(symbol)
@@ -38,6 +34,5 @@ def calculator():
     else:
       should_continue = False
       calculator()
-
 
 calculator()
