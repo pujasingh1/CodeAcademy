@@ -26,13 +26,11 @@ def calculator():
     num2 = float(input("what's the next number?: "))
     calculation_function = operation[pick_operation]
     answer = calculation_function(num1, num2)
-
     print(f"{num1} {pick_operation} {num2} = {answer}")
-
     if input(f"Type 'y' to continue with {answer}, or type 'n' to start a new calcualtion: ") == "y":
       num1 = answer
     else:
       should_continue = False
       calculator()
-
+      
 calculator()
