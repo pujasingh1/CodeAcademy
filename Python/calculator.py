@@ -4,12 +4,10 @@ def btnClick(numbers):
     global operator
     operator=operator + str(numbers)
     text_Input.set(operator)
-
 def btnClearDisplay():
     global operator
     operator=""
-    text_Input.set("")
-    
+    text_Input.set("")   
 def btnEqualsInput():
     global operator
     sumup=str(eval(operator))
