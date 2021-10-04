@@ -16,8 +16,7 @@ for char in range(1, nr_symbols + 1):
     password_list.append(random.choice(symbols))
 
 for char in range(1, nr_numbers + 1):
-    password_list.append(random.choice(numbers))
-    
+    password_list.append(random.choice(numbers))   
 random.shuffle(password_list)
 
 password = ""
