@@ -1,4 +1,4 @@
-# ollowing list as the deck of cards:
+# Following list can be used as the deck of cards:
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 def restart():
