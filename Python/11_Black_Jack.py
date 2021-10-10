@@ -11,7 +11,7 @@ def restart():
     return deal
 
   def calculate_score(cards):
-    """Take a list of cards and return the score calculated from the cards"""
+
     
     if sum(cards) == 21 and len(cards) == 2:
       return 0
