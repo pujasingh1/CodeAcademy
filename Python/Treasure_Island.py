@@ -23,6 +23,7 @@ print('''
 
 print("Welcome to the Treasure Island.")
 print("Your mission is to find the treasure.")
+
 choose = input('You\'re at a cross road. Where do you want to go? Type "left" or "right" \n').lower()
 if choose == "left":
   choose1 = input('You come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n').lower()
